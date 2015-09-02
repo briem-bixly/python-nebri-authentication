@@ -10,9 +10,6 @@ This app can be installed via pip:
 ```
 pip install git+https://github.com/briem-bixly/python-nebrios-authentication#egg=python-nebrios-authentication
 ```
-
-<strong>NOTE</strong>: This app requires https://github.com/brie-bixly/python-nebrios to be set up on your instance.
-
 <strong>NOTE</strong>: Before using any classes and associated functions in this package, you must include nebrios-authentication in your NebriOS Instance and set up any authentication methods you would like to utilize. See https://github.com/briem-bixly/nebrios-authentication/blob/master/README.md for more information.
 
 <h2>Public Classes</h2>
