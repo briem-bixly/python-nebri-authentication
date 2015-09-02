@@ -7,7 +7,7 @@ setup(
     packages=['nebrios_auth'],
     url='http://github.com/briem-bixly/python-nebrios-authentication/',
     author='briem-bixly',
-    install_requires=[
-        'https://github.com/briem-bixly/python-nebrios#egg=python-nebrios',
+    dependency_links=[
+        'http://github.com/briem-bixly/python-nebrios#egg=python-nebrios',
     ]
 )
