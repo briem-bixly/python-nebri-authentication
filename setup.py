@@ -8,6 +8,6 @@ setup(
     url='http://github.com/briem-bixly/python-nebrios-authentication/',
     author='briem-bixly',
     dependency_links=[
-        'git+ssh://git@github.com/briem-bixly/python-nebrios#egg=python-nebrios',
+        'git+ssh://git@github.com/briem-bixly/python-nebrios/tarball/master#egg=python-nebrios',
     ]
 )
