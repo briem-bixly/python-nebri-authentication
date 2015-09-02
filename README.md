@@ -32,7 +32,7 @@ basic_client = NebriOSBasic('instance_name', 'username', 'password')
 
 <strong>NebriOSOAuth</strong>
 ```
-oauth_client = NebriOSOAuth('instance_name', 'access_token', 'consumer_key', 'consumer_secret')
+oauth_client = NebriOSOAuth('instance_name', access_token='access_token', consumer_key='consumer_key', consumer_secret='consumer_secret')
 ```
 - consumer key and consumer secret should be obtained from your NebriOS instance using https://github.com/briem-bixly/nebrios-authentication
 - if you have already created an access token, consumer key and consumer secret are not required
@@ -50,3 +50,27 @@ All classes have the same function with the same parameters.
 - files (optional): any files that you would like to upload via a POST request
 
 <h2>Examples</h2>
+```
+from nebrios_auth import NebriOSToken
+token_client = NebriOSToken('instance_name', 'token')
+token_client.api_request('api_module', 'view_name', method='POST', payload=payload)
+//outputs response
+```
+```
+from nebrios_auth import NebriOSBasic
+basic_client = NebriOSBasic('instance_name', 'username', 'password')
+basic_client.api_request('api_module', 'view_name', method='POST', payload=payload)
+//outputs response
+```
+```
+from nebrios_auth import NebriOSOAuth
+oauth_client = NebriOSOAuth('instance_name', consumer_key='consumer_key', consumer_secret='consumer_secret')
+oauth_client.api_request('api_module', 'view_name', method='POST', payload=payload)
+//outputs response
+```
+```
+from nebrios_auth import NebriOSOAuth
+oauth_client = NebriOSOAuth('instance_name', access_token='access_token')
+oauth_client.api_request('api_module', 'view_name', method='POST', payload=payload)
+//outputs response
+```
