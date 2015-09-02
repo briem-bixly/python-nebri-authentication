@@ -6,7 +6,7 @@ This app is intended for use with a NebriOS instance. Visit https://nebrios.com 
 
 <h2>Installation</h2>
 
-This app can be installed via PyPi:
+This app can be installed via pip:
 ```
 pip install git+https://github.com/briem-bixly/python-nebrios-authentication#egg=python-nebrios-authentication
 ```
