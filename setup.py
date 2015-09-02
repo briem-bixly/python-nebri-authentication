@@ -8,6 +8,6 @@ setup(
     url='http://github.com/briem-bixly/python-nebrios-authentication/',
     author='briem-bixly',
     install_requires=[
-        '-e git://github.com/briem-bixly/python-nebrios#egg=python-nebrios'
+        'https://github.com/briem-bixly/python-nebrios#egg=python-nebrios',
     ]
 )
