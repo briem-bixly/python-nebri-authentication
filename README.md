@@ -8,7 +8,7 @@ This app is intended for use with a Nebri instance. Visit https://nebrios.com to
 
 This app can be installed via pip:
 ```
-pip install python-nebrios-authentication
+pip install python-nebri-authentication
 ```
 <strong>NOTE</strong>: Before using any classes and associated functions in this package, you must include nebrios-authentication in your Nebri Instance and set up any authentication methods you would like to utilize. See https://github.com/briem-bixly/nebrios-authentication/blob/master/README.md for more information.
 
