@@ -19,19 +19,19 @@ This is the most basic authentication method supported. This class must be insta
 token_client = NebriToken('instance_name', 'token')
 ```
 - instance name is your Nebri instance name. i.e. https://<strong>instance_name</strong>.nebrios.com
-- your token must be generated on your Nebri instance using https://github.com/briem-bixly/nebrios-authentication
+- your token must be generated on your Nebri instance using https://github.com/nebrie/nebrios-authentication
 
 <strong>NebriBasic</strong>
 ```
 basic_client = NebriBasic('instance_name', 'username', 'password')
 ```
-- before using this method, a username and password combo should be saved to your Nebri instance using https://github.com/briem-bixly/nebrios-authentication
+- before using this method, a username and password combo should be saved to your Nebri instance using https://github.com/nebrie/nebrios-authentication
 
 <strong>NebriOAuth</strong>
 ```
 oauth_client = NebriOAuth('instance_name', access_token='access_token', consumer_key='consumer_key', consumer_secret='consumer_secret')
 ```
-- consumer key and consumer secret should be obtained from your Nebri instance using https://github.com/briem-bixly/nebrios-authentication
+- consumer key and consumer secret should be obtained from your Nebri instance using https://github.com/nebrie/nebrios-authentication
 - if you have already created an access token, consumer key and consumer secret are not required
 - if you have not created an access token, only consumer key and consumer secret are required. this app will make the appropriate call for an access token and will save the generated token to your NebriAuth instance automatically.
 
